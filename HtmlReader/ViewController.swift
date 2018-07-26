@@ -47,7 +47,29 @@ class ViewController: UIViewController {
                 print(err.debugDescription)
             }
         }
-        
+//        // Do any additional setup after loading the view, typically from a nib.
+//        Alamofire.request("http://www.vehiclebuzzzz.com/index.php/JsonController/vehicledtls?veh_id=23&veh_category=car").responseJSON{response in
+//
+//            let request = response.result
+//            if let json = request.value as? NSDictionary
+//            {
+//                //print(json)
+//                let dict = json["server_vehicledtlsresponse"] as! NSDictionary
+//                self.resposeArray = dict["veh_dtls"] as! NSArray
+//                for i in 0..<self.resposeArray.count{
+//                    print("count value\(i)")
+//                    let imgString = (self.resposeArray[i] as! NSDictionary)["image_path"] as! String
+//
+//                    self.imagesArray  = imgString.components(separatedBy: "$$$") as [Any] as NSArray
+//                    print( self.imagesArray.count)
+//
+//                    print("images array count : \(self.imagesArray.count)")
+//
+//                }
+//                print("response of data :\(self.resposeArray)")
+//                self.tableView.reloadData()
+//            }
+//        }
         //        guard
         //            let file = Bundle.main.path(forResource: "agreement", ofType: "html"),
         //            let html = try? String(contentsOfFile: file, encoding: String.Encoding.utf8)
